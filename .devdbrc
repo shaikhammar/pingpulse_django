@@ -1,0 +1,6 @@
+[
+  {
+    "type": "sqlite",
+    "path": "c:\\dev\\pingpulse\\pingpulse-django-vue\\backend\\db.sqlite3"
+  }
+]
