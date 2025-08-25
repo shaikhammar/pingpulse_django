@@ -3,7 +3,7 @@ from django.contrib.auth import get_user_model
 
 def create_demouser(apps, schema_editor):
     USER = get_user_model()
-    USER.objects.create_user(username='demouser', password='demopassword', email='demouser@example.com')
+    User.objects.create_user(email='demouser@example.com', password='demopassword')
 
 class Migration(migrations.Migration):
 
