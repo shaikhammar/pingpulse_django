@@ -44,11 +44,11 @@ To run the application in a development environment, use the following command:
 docker-compose up --build
 ```
 
-This will start the Django development server and the PostgreSQL database. The application will be accessible at `http://localhost:8000`.
+This will start the Django development server and the PostgreSQL database. The application will be accessible at `http://localhost:8010`.
 
 ### Production Deployment
 
-For production, a `docker-compose.prod.yml` file is provided which uses a production-grade WSGI server (Gunicorn) and does not mount the application code as a volume.
+For production, a `docker-compose.prod.yml` file is provided which uses a production-grade WSGI server (Gunicorn) and does not mount the application code as a volume. The application will be accessible on port 8010 on the host machine.
 
 To deploy the application in production, use the following command, passing the environment variables directly:
 
